@@ -1,3 +1,6 @@
+import Hangman from "./hangman";
+import getPuzzle from "./requests";
+
 const puzzleEl = document.querySelector("#puzzle");
 const guessesEl = document.querySelector("#guesses");
 let game1;
@@ -26,5 +29,4 @@ const startGame = async () => {
 };
 
 document.querySelector("#reset").addEventListener("click", startGame);
-
 startGame();
